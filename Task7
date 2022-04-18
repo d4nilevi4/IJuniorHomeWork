@@ -1,0 +1,20 @@
+using System;
+
+namespace IJuniorHW
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            float сristalValue = 0f;
+            float goldToCrystals = 2f;
+            Console.Write("Введите колличество начальнго золота: ");
+            float goldValue =float.Parse(Console.ReadLine());
+            Console.WriteLine("Сколько золота вы хотите обменять на кристаллы? Актуальный курс {0} золота за один кристалл.", goldToCrystals);
+            float goldToExchange = float.Parse(Console.ReadLine());
+            goldValue -= goldToExchange;
+            сristalValue = goldToExchange / goldToCrystals;
+            Console.WriteLine($"Колличество оставшегося золота: {goldValue},\nКолличество кристаллов: {сristalValue}");
+        }
+    }
+}
