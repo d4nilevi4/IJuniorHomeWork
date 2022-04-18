@@ -13,7 +13,7 @@ namespace IJuniorHW
             Console.Write("Введите колличество старушек: ");
             int peopleAmount = int.Parse(Console.ReadLine());
          
-            totalWaitingTimeInMinutes = (waitingTimePerPersonInMinutes * peopleAmount) % 60;
+            totalWaitingTimeInMinutes = (waitingTimePerPersonInMinutes * peopleAmount) % minutesInHour;
             totalWaitingTimeInHours = (waitingTimePerPersonInMinutes * peopleAmount) / minutesInHour;
 
             Console.WriteLine($"Вы должны отстоять в очереди {totalWaitingTimeInHours} часа и {totalWaitingTimeInMinutes} минут");
