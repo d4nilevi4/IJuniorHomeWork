@@ -1,0 +1,23 @@
+using System;
+
+namespace IJuniorHW
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string firstName = "Иванов";
+            string secondName = "Иван";
+            Console.WriteLine(firstName + secondName);
+            SwapStrings(ref firstName, ref secondName);
+            Console.WriteLine(firstName + secondName);
+        }
+
+        static void SwapStrings(ref string firstString, ref string secondString)
+        {
+            var temp = firstString;
+            firstString = secondString;
+            secondString = temp;
+        }
+    }
+}
