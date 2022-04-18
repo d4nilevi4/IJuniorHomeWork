@@ -1,0 +1,21 @@
+using System;
+
+namespace IJuniorHW
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введите ваше имя: ");
+            string name = Console.ReadLine();
+            Console.Write("Сколько вам лет?: ");
+            string age = Console.ReadLine();
+            Console.Write("В каком городе живёте?: ");
+            string city = Console.ReadLine();
+            Console.Write("Кем вы работаете?: ");
+            string job = Console.ReadLine();
+
+            Console.WriteLine($"Ваше имя {name},вам {age} лет, ваш город - {city},вы работаете {job}");
+        }
+    }
+}
