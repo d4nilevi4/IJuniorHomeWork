@@ -1,0 +1,21 @@
+using System;
+
+namespace IJuniorHW
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            uint age = 22;
+            byte handsCount = 2;
+            int weight = 100;
+            bool isMarried = false;
+            double speed = 10.5;
+            float resistance = 6.05f;
+            char firstLetterOfName = 'D';
+            string name = "Danil";
+            var health = 10000L;
+            object linesInTheProgramm = 21;
+        }
+    }
+}
