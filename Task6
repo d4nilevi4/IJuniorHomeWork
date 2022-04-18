@@ -1,0 +1,15 @@
+using System;
+
+namespace IJuniorHW
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int picturesAmount = 52;
+            int picturesInRow = 3;
+            Console.WriteLine("Колличество полностью заполненых рядов: {0}", picturesAmount / picturesInRow);
+            Console.WriteLine("Картинок сверх меры: {0}", picturesAmount % picturesInRow);
+        }
+    }
+}
