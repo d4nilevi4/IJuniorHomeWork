@@ -6,19 +6,15 @@ namespace IJuniorHW
     {
         static void Main(string[] args)
         {
+            int minutesInHour = 60;
             int totalWaitingTimeInMinutes = 0;
             int totalWaitingTimeInHours = 0;
             int waitingTimePerPersonInMinutes = 10;
             Console.Write("Введите колличество старушек: ");
             int peopleAmount = int.Parse(Console.ReadLine());
-
-            for (int i = 0; i < peopleAmount; i++)
-            {
-                totalWaitingTimeInMinutes += waitingTimePerPersonInMinutes;
-            }
-
-            totalWaitingTimeInHours = totalWaitingTimeInMinutes / 60;
-            totalWaitingTimeInMinutes -= totalWaitingTimeInHours * 60;
+         
+            totalWaitingTimeInMinutes = (waitingTimePerPersonInMinutes * peopleAmount) % 60;
+            totalWaitingTimeInHours = (waitingTimePerPersonInMinutes * peopleAmount) / minutesInHour;
 
             Console.WriteLine($"Вы должны отстоять в очереди {totalWaitingTimeInHours} часа и {totalWaitingTimeInMinutes} минут");
         }
